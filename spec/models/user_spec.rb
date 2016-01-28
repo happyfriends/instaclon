@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe ".create_user" do
-    let(:email) { "bob@email.com" }
+    let(:email) { Users::Email.for("bob@email.com") }
     it "creates a new user" do
       expect {
         described_class.create_user(email)
