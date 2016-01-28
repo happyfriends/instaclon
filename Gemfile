@@ -36,7 +36,7 @@ end
 
 group :test do
   gem "capybara-webkit"
-  gem "cucumber-rails"
+  gem "cucumber-rails", require: false
   gem "database_cleaner"
   gem "launchy"
   gem "shoulda-matchers"
