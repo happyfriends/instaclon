@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 ruby "2.3.0"
 
-gem "airbrake"
 gem "autoprefixer-rails"
 gem "coffee-rails", "~> 4.1.0"
+gem "sidekiq"
 gem "jquery-rails"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"

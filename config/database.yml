@@ -8,7 +8,7 @@ development: &default
   reaping_frequency: <%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
   timeout: 5000
 
-test:
+test: &test
   <<: *default
   database: instaclon_test
 
@@ -20,3 +20,6 @@ production: &deploy
   url:  <%= ENV.fetch("DATABASE_URL", "") %>
 
 staging: *deploy
+
+cucumber:
+  <<: *test
